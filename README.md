@@ -26,10 +26,10 @@
           border-radius: 3px;
           box-sizing: border-box;
         }
-        input[type="submit"] {
+        input[type=""] {
           background-color: #4CAF50;
           color: white;
-          padding: 10px 15px;
+          padding: 100px 150px;
           border: none;
           border-radius: 3px;
           cursor: pointer;
