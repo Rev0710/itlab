@@ -6,12 +6,7 @@
         body {
           font-family: sans-serif;
         }
-        form {
-          width: 300px;
-          margin: 0 auto;
-          padding: 20px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
+       
         }
         label {
           display: block;
