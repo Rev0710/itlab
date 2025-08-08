@@ -26,13 +26,7 @@
           border-radius: 3px;
           box-sizing: border-box;
         }
-        input[type="submit"] {
-          background-color: #4CAF50;
-          color: white;
-          padding: 10px 15px;
-          border: none;
-          border-radius: 3px;
-          cursor: pointer;
+       
         }
     </style>
 </head>
