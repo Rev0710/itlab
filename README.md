@@ -1,58 +1,22 @@
-<!DOCTYPE html>
-<html lang="">
-<head>
-    <title>Login Form</title>
-    <style>
-        body {
-          font-family: sans-serif;
-        }
-            }
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 100px;
-      margin-bottom: 100px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-sizing: border-box;
-    }
-   
-    }
-</style>
-       
-        }
-        label {
-          display: block;
-          margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="password"] {
-          width: 100%;
-          padding: 10px;
-          margin-bottom: 10px;
-          border: 1px solid #ccc;
-          border-radius: 3px;
-          box-sizing: border-box;
-        }
-       
-        }
-    </style>
-</head>
-<body>
+<?php
+$conn = mysqli_connect("localhost", "root", "", "psits");
+if (!$conn) {
+    die("wala connect");
+}
 
-<form action="" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+$sql = "Select * from Students where email = '$email' and password = '$password'";
 
-    <input type="submit" value="Login">
-</form>
+$result = mysqli_query($conn, $sql);
 
-</body>
-</html>
+if (mysqli_num_rows($result) > 0) {
+    echo "SUCCESS";
+    exit();
+} else {
+    echo("WALA GID YA");
+}
+
+mysqli_close($conn);
+?>
