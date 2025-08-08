@@ -6,6 +6,23 @@
         body {
           font-family: sans-serif;
         }
+            }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+   
+    }
+</style>
        
         }
         label {
